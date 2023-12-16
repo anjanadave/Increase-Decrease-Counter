@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increase Decrease Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>COUNTER</h1>
+        <p><span id="count">0</span></p>
+        <button onclick="incrementCounter()" class="first-btn">Increase</button>
+        <button onclick="decrementCounter()" class="sec-btn">Decrease</button>
+        <button onclick="incrementByTwo()" class="third-btn">2+</button>
+
+    </div>
+    <script>
+        let count = 0;
+
+        function incrementCounter(){
+            count ++;
+            document.getElementById("count").innerHTML = count;
+        }
+
+        function decrementCounter() {
+            count --;
+            document.getElementById("count").innerHTML = count;
+        }
+
+        function incrementByTwo() {
+            count += 2;
+            document.getElementById("count").innerHTML = count;
+        }
+
+    </script>
+</body>
+</html>
